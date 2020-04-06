@@ -11,3 +11,5 @@
 
 
 token原理
+除了登录之外的其他API接口，必须在登录之后才能访问
+token保存到sessionStorage
