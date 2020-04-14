@@ -11,7 +11,7 @@ import { Menu, Submenu, MenuItemGroup, MenuItem } from 'element-ui'
 import { Breadcrumb, BreadcrumbItem, Card } from 'element-ui'
 import { Row, Col } from 'element-ui'
 import { Table, TableColumn, Switch } from 'element-ui'
-import { Tooltip, Pagination, Dialog } from 'element-ui'
+import { Tooltip, Pagination, Dialog, MessageBox } from 'element-ui'
 
 Vue.use(Button)
 Vue.use(Form)
@@ -38,6 +38,7 @@ Vue.use(Pagination)
 Vue.use(Dialog)
 
 Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm
 
 // 区别：Vue.prototype.注册全局组件更通用
 // Vue.use()必须专门为vue设计的组件才可以，内置install方法，如果可以推荐这个
