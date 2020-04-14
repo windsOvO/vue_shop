@@ -13,3 +13,6 @@
 token原理
 除了登录之外的其他API接口，必须在登录之后才能访问
 token保存到sessionStorage
+
+# 2。通过接口获取菜单数据
+用axios请求拦截器添加token，保证拥有数据获取的权限
